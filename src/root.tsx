@@ -1,10 +1,8 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
 import { QwikSpeakProvider } from 'qwik-speak';
-
 import { config, translationFn } from './speak-config';
-
-import globalStyles from './global.css?inline';
+import globalStyles from './global.css';
 
 export default component$(() => {
   useStyles$(globalStyles);
