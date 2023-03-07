@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", sans-serif;
+}
+
+main {
+  padding: 10px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+@layer components {
+  .lang_box {
+    @apply absolute right-10 top-0 w-24 min-h-[28px] bg-[#666] text-white z-10;
+  }
+  .lang_box .select_box {
+    @apply mx-2 my-1  leading-[22px] text-sm w-24 cursor-pointer;
+  }
+  .lang_box .select_box.off {
+    background: url(https://res.cloudinary.com/dfd9pdmuf/image/upload/w_18,f_auto/v1677989413/bioden/lang_zrytly)
+      no-repeat 65px -15px;
+  }
+  .lang_box .select_box.on {
+    background: url(https://res.cloudinary.com/dfd9pdmuf/image/upload/w_18,f_auto/v1677989413/bioden/lang_zrytly)
+      no-repeat 65px 5px;
+  }
+  .lang_box .select_lang {
+    @apply mx-2 my-1 w-24 hidden;
+  }
+  .lang_box .selected {
+    @apply block;
+  }
+  .lang_box .select_lang .item {
+    @apply leading-[22px] text-[#fff] text-sm;
+  }
+  .history {
+    @apply w-[780px];
+  }
+  #container #content .right .history .history_p1 {
+    @apply w-[750px] h-24 text-2xl pt-11 leading-10;
+  }
+  #container #content .right .history .history_p2 {
+    @apply w-[750px] h-10 text-xl leading-8 mt-1 pt-32;
+  }
+  #container #content .right .history .green {
+    @apply text-[#269885];
+  }
+  .career img {
+    @apply w-[284px] float-left pt-32;
+  }
+  .career .dotted {
+    @apply border-b-2 border-dotted border-b-black;
+  }
+  #content dl {
+    @apply mt-6 mb-4 mx-0 pl-[7px];
+  }
+  #content dt {
+    @apply text-lg leading-[29px] text-[#727070] tracking-[-0.3px] font-light;
+  }
+  #content dd {
+    @apply text-lg leading-[29px] tracking-[-0.3px] text-[#727070] font-light;
+  }
+  .index_box_wrap {
+    @apply w-full h-[180px] pb-[38px];
+  }
+  .index_box_wrap .index_box {
+    @apply w-[238px] h-[178px] float-left mr-[11px];
+  }
+  .index_box_wrap .index_box4 {
+    @apply overflow-hidden mr-0;
+  }
+  .index_box_wrap .index_box a {
+    @apply block text-white w-full h-[178px];
+  }
+  .index_box_wrap .index_box4 .box_board a {
+    @apply block h-[15px] float-right overflow-hidden w-[94%];
+  }
+  .index_box_wrap .index_box .box_title {
+    @apply h-[30px] leading-[30px] text-[23px] pl-[15px] pr-0 pt-2.5 pb-0;
+  }
+  .index_box_wrap .index_box .box_cont_l {
+    @apply text-[13px] float-left pl-[15px] pr-0 pt-[17px] pb-0;
+  }
+  .index_box_wrap .index_box .box_cont_r {
+    @apply text-[13px] float-right pl-0 pr-[15px] pt-[17px] pb-0;
+  }
+  .index_box_wrap .index_box1 {
+    @apply ml-[7px];
+  }
+  #footer {
+    @apply w-full h-[100px] absolute mb-0 bottom-0 inset-x-0;
+    background: #c1c7c7;
+  }
+  #footer .inner {
+    @apply w-[1000px] mx-auto my-0;
+  }
+  #footer img {
+    @apply float-left pt-[17px];
+  }
+  #footer address {
+    @apply w-[750px] float-left text-[11.6px] leading-[21px] text-[#333233] relative ml-[30px] pt-5;
+  }
+  #footer span {
+    @apply px-[15px] py-0;
+  }
+  body {
+    @apply w-full min-w-[1000px];
+  }
+  body * {
+    @apply m-0 p-0;
+  }
+  ul {
+    list-style: none;
+  }
+  img {
+    @apply border-0 border-none;
+  }
+  a {
+    @apply no-underline text-[#333];
+  }
+  #wrap {
+    @apply min-w-fit w-full;
+  }
+  .clearfix {
+    zoom: 1;
+  }
+  .clearfix:before,
+  .clearfix:after {
+    @apply content-[""] table;
+  }
+  .clearfix:after {
+    @apply clear-both;
+  }
+}
